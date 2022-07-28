@@ -85,7 +85,7 @@ public class splash extends AppCompatActivity implements NetworkChangeReceiver.C
 
                 }
 
-            }, 5000);
+            }, 3000);
 
 
         }else{
