@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".home"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#2872E1">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Menu"
+            android:textSize="25dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_notifications_24"
+            android:layout_marginLeft="150dp"/>
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24" />
+        <ImageView
+            android:id="@+id/logouthome"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_power_24"
+            android:layout_marginLeft="6dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_width="365dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shapes"
+        android:layout_marginTop="5dp"
+        android:hint="Search the product"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/search_icon"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black">
+
+    </EditText>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MOBILES"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:paddingLeft="10dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="#E8E1E1">
+                <TextView
+                    android:id="@+id/mobiles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mobiles"
+                    android:textSize="30dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HEADPHONES"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:background="@color/teal_700">
+                <TextView
+                    android:id="@+id/headphones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hetphones" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LAPTOPS AND COMPUTERS"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:background="#F66464">
+                <TextView
+                    android:id="@+id/pcs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/laptops"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SMART WATCH"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:background="#F6F5FA">
+                <TextView
+                    android:id="@+id/smartwatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/smartwatch"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SPEAKERS"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/speakers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/speakers"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
