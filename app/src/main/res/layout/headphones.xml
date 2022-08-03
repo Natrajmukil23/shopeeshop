@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mobiles">
+    <LinearLayout
+        android:id="@+id/headphone_master"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
 
 
     <ScrollView
@@ -137,5 +143,58 @@
 
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
+
+<RelativeLayout
+android:id="@+id/headphone_o_master"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+android:orientation="vertical"
+android:visibility="gone"
+android:gravity="center"
+tools:context=".Offline_page">
+
+
+<ImageView
+    android:id="@+id/img4"
+    android:layout_width="255dp"
+    android:layout_height="173dp"
+    android:layout_marginLeft="90dp"
+    android:layout_marginTop="120dp"
+    android:foregroundGravity="center"
+    app:srcCompat="@drawable/no_internet" />
+
+<TextView
+    android:id="@+id/edt"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_below="@+id/img4"
+    android:layout_marginTop="80dp"
+    android:background="@null"
+    android:ems="10"
+    android:gravity="center"
+    android:inputType="textPersonName"
+    android:text="OOPS YOUR INTERNET IS NOT CONNECTED"
+    android:textColor="@color/purple_200"
+    android:textSize="15dp" />
+
+
+<TextView
+    android:id="@+id/edt1"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_below="@+id/edt"
+    android:layout_marginTop="10dp"
+    android:background="@null"
+    android:ems="10"
+    android:gravity="center"
+    android:inputType="textPersonName"
+    android:text="CHECK YOUR INTERNET !!"
+    android:textColor="@color/purple_200"
+    android:textSize="15dp" />
+
+
+</RelativeLayout>
+
+</RelativeLayout>

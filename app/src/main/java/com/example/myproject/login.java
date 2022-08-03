@@ -53,6 +53,12 @@ public class login extends AppCompatActivity implements NetworkChangeReceiver.Co
                 startActivity(new Intent(login.this,home.class));
             }
         });
+        forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(login.this,forgot_pass.class));
+            }
+        });
 
         signup2.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -17,6 +17,14 @@
         android:theme="@style/Theme.MyProject"
         tools:targetApi="31">
         <activity
+            android:name=".user_account"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".forgot_pass"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
             android:name=".splash"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
@@ -44,7 +52,7 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".mobiles"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".home"
@@ -62,9 +70,10 @@
             android:name=".welcome"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <receiver android:name=".Utils.NetworkChangeReceiver"
-            android:enabled="true"/>
-    </application>
 
+        <receiver
+            android:name=".Utils.NetworkChangeReceiver"
+            android:enabled="true" />
+    </application>
 
 </manifest>
